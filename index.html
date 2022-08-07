@@ -28,8 +28,13 @@
 <title>Skool</title>
 </head>
 <body ng-controller="basectrl">
-	<div ng-include="'html/header.html'"></div>
-	<div ng-include="'html/menu.html'"></div>
-	<div ng-include="'html/content.html'"></div>
+	<div ng-if="studentcard">
+		<div ng-include="'html/student_card.html'"></div>
+	</div>
+	<div ng-if="!studentcard">
+		<div ng-include="'html/header.html'"></div>
+		<div ng-include="'html/menu.html'"></div>
+		<div ng-include="'html/content.html'"></div>
+	</div>
 </body>
 </html>
