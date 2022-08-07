@@ -26,6 +26,12 @@ skool.controller("basectrl", ["$scope", "$http", "$location", "$rootScope", func
 		});
 	}
 	
+	var localUrl = $location.absUrl()
+	var param = localUrl.split("?")[1];
+	if (param != undefined && param.includes("scan=")) {
+		$scope.studentcard = true;
+	}
+	
 	$scope.selectedMenu = "menu-home";
 	$scope.selectMenu = function(menu){
 		$(".menu").removeClass("active-menu");
