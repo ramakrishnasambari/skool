@@ -1,0 +1,14 @@
+.menu-background{
+	background-color: #11b0d4;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+   color: rgb(255 255 255);
+}
+.nav-link{
+	cursor: pointer;
+}
+.active-menu {
+	font-weight: bold;
+	color: rgb(232 255 107);
+}
